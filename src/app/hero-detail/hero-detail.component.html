@@ -1,10 +1,11 @@
 <div *ngIf="hero" [ngStyle]="{'background-color': hero.colour}" [class.border]="showBorder">
-  <h2>Details</h2>
-  <div>Name: {{hero.name | uppercase}}</div>
-  <div>id: {{hero.id}}</div>
-  <div>Colour: {{hero.colour}}</div>
+  <h2 class="details">Details</h2>
+  <div class="name">Name: {{hero.name | uppercase}}</div>
+  <div class="id">id: {{hero.id}}</div>
+  <div class="colour">Colour: {{hero.colour}}</div>
+  <div class="power">Power: {{hero.power}}</div>
   <div>
-    <label for="hero-name">Hero name: </label>
-    <input id="hero-name" [(ngModel)]="hero.name" placeholder="name place">
+    <label class="hero" for="hero-name">Hero name: </label>
+    <input class ="id" id="hero-name" [(ngModel)]="hero.name" placeholder="name place">
   </div>
 </div>

@@ -11,6 +11,7 @@ import { HEROES } from 'src/app/mock-heroes';
 export class HeroesComponent implements OnInit {
 
   heros = HEROES;
+  power = HEROES;
 
   constructor() { }
 

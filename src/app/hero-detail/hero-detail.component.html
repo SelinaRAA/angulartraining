@@ -4,13 +4,29 @@
   <div class="id">id: {{hero.id}}</div>
   <div class="colour">Colour: {{hero.colour}}</div>
 
+
   <div>
     <label class="hero" for="hero-name">Hero name: </label>
-    <input id="hero-name" [(ngModel)]="hero.name" placeholder="name place">
+      <input id="hero-name" [(ngModel)]="hero.name" placeholder="name place">
     <h2>Powers:</h2>
     <ul>
     <li *ngFor="let power of hero.powers">
       {{power}}
+    </li>
+    </ul>
+
+    <h2>Villains:</h2>
+      <ul>
+    <li *ngFor="let villain of hero.villains">
+      {{villain.id}} {{villain.name}}
+    </li>
+    </ul>
+
+
+ <h2>Villian Sidekick:</h2>
+    <ul>
+    <li *ngFor="let sidekick of hero.sidekick">
+      {{sidekick.id}} {{sidekick.name}}
     </li>
     </ul>
 
